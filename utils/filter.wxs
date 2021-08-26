@@ -1,0 +1,7 @@
+function substring(str,s,e){
+  return str.substring(s,e)
+}
+
+module.exports = {
+  substring:substring
+}

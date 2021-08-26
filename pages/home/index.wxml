@@ -1,2 +1,24 @@
-<!--pages/home/index.wxml-->
-<text>pages/home/index.wxml</text>
+<view class="home-container">
+  <view class="banner">
+    <image src="/imgs/bill/banner.png" class="banner-img"></image>
+    <text class="banner-text"></text>
+  </view>
+  <view class="content">
+    <view class="content-head">
+      <view class="head-left">
+        <text>当月收入</text>
+        <text>12000</text>
+      </view>
+      <view class="head-title">
+        <text>2021年8月</text>
+      </view>
+      <view class="head-right">
+        <text>当月支出</text>
+        <text>5236.8</text>
+      </view>
+    </view>
+    <scroll-view scroll-y class="tree">
+      <tree-item></tree-item> 
+    </scroll-view>
+  </view>
+</view>

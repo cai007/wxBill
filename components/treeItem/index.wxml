@@ -1,0 +1,19 @@
+<wxs src="../../utils/filter.wxs" module="tools" />
+<block wx:for="{{treeList}}" wx:key="bill_id">
+  <view class="tree-item">
+      <view class="item-title">
+        <text class="title-date">{{tools.substring(item.time,6,8)}}日</text>
+        <view class="title-point"></view>
+        <text class="title-total">300.50</text>
+      </view>
+      <view class="hr" />
+      <view class="item-info">
+        <image src="/imgs/system/type_13.png" class="info-img"></image>
+        <view class="info-content">
+          <text class="info-label">{{item.type_name}} {{item.money}}</text>
+          <text class="info-caption">{{item.note}}</text>
+        </view>
+      </view>
+  </view>
+</block>
+

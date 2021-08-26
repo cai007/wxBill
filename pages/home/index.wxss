@@ -1,1 +1,27 @@
-/* pages/home/index.wxss */
+.banner {
+  height: 300rpx;
+  width: 100%;
+}
+.banner .banner-img {
+  height: 300rpx;
+  width: 100%;
+}
+
+.content{
+  height: 1000rpx;
+  width: 100%;
+}
+.content-head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-left{
+  display: flex;
+  flex-direction: column;
+}
+.head-right{
+  display: flex;
+  flex-direction: column;
+}
+

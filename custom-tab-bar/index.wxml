@@ -1,0 +1,15 @@
+<!-- components/tabbar/index.wxml -->
+<van-tabbar placeholder>
+  <view class="selfTabBar">
+    <block wx:for="{{list}}" wx:key="index">
+      <view wx:if="{{item.key != 'add'}}" class="{{active == index ? 'activeBar' : 'selfTabBarItem'}}"
+        data-active="{{index}}" bindtap="setKey">
+        <van-icon size="40rpx" name="{{active == index ? item['iconActive'] : item['icon']}}" />
+        <text class="tabTitle">{{item['label']}}</text>
+      </view>
+      <view wx:else class="cameraBarItem" data-active="{{index}}" bindtap="setKey">
+        <van-icon size="40rpx" name="{{active == index ? item['iconActive'] : item['icon']}}" />
+      </view>
+    </block>
+  </view>
+</van-tabbar>

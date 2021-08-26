@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+  </view>
+  <view>
+    <button class="tobill-btn" bindtap="toBill">开启账单</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

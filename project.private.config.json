@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "账单列表",
+          "pathName": "pages/billList/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

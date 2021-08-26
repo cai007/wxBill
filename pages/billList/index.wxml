@@ -1,0 +1,19 @@
+<view class="list-container">
+  <view class="list-banner">
+    <image></image>
+    <view class="banner-text">
+      <text>月账单-</text>
+      <view class="net-assets">
+        <text>净资产</text>
+        <text>100万</text>
+      </view>
+      <view class="total">
+        <text>总资产：1253万</text>
+        <text>总负债：0.00</text>
+      </view>
+    </view>
+  </view>
+  <van-cell-group wx:for="{{8}}" wx:key="index" class="list-container">
+    <van-cell title="2021年8月" is-link value="12004"/>
+  </van-cell-group>
+</view>

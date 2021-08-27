@@ -5,7 +5,8 @@
     "pages/billList/index",
     "pages/statistic/index",
     "pages/home/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/add/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,36 +19,34 @@
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/home/index",
-        "iconPath": "imgs/bill/home.png",
-        "selectedIconPath": "imgs/bill/home-select.png"
+        "pagePath": "pages/home/index"
       },
       {
         "text": "账户",
-        "pagePath": "pages/billList/index",
-        "iconPath": "imgs/bill/bill.png",
-        "selectedIconPath": "imgs/bill/bill-select.png"
+        "pagePath": "pages/billList/index"
       },
       {
         "text": "统计",
-        "pagePath": "pages/statistic/index",
-        "iconPath": "imgs/bill/trend.png",
-        "selectedIconPath": "imgs/bill/trend-select.png"
+        "pagePath": "pages/statistic/index"
       },
       {
         "text": "我的",
-        "pagePath": "pages/my/index",
-        "iconPath": "imgs/bill/user.png",
-        "selectedIconPath": "imgs/bill/user-select.png"
+        "pagePath": "pages/my/index"
       }
     ]
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "tabbar":"/custom-tab-bar",
-    "tree-item":"components/treeItem/index",
+    "tabbar": "/custom-tab-bar",
+    "ec-canvas": "/ec-canvas/ec-canvas",
+    "tree-item": "components/treeItem/index",
     "van-button": "@vant/weapp/button/index",
-    "van-cell":"@vant/weapp/cell/index",
-    "van-tabbar": "@vant/weapp/tabbar/index"
+    "van-cell": "@vant/weapp/cell/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-field": "@vant/weapp/field/index"
   }
 }

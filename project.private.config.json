@@ -23,6 +23,18 @@
           "pathName": "pages/home/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "统计",
+          "pathName": "pages/statistic/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "添加",
+          "pathName": "pages/add/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,0 +1,3 @@
+.money-input{
+  text-align: right !important;
+}

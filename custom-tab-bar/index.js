@@ -14,24 +14,24 @@ Component({
     active:0,
     list: [{
       key: "home",
-      icon:  "imgs/bill/home.png",
-      iconActive:  "imgs/bill/home-select.png",
+      icon:  "/imgs/bill/home.png",
+      iconActive:  "/imgs/bill/home-select.png",
       label: "首页",
       url: "/pages/home/index"
     },
     {
       key: "bill",
-      icon:  "imgs/bill/bill.png",
-      iconActive:  "imgs/bill/bill-select.png",
+      icon:  "/imgs/bill/bill.png",
+      iconActive:  "/imgs/bill/bill-select.png",
       label: "账单",
       url: "/pages/billList/index"
     },
     {
       key: "add",
-      icon:  "imgs/system/icon_input_trade.png",
+      icon:  "/imgs/system/icon_input_trade.png",
       iconActive:  "/imgs/system/icon_input_trade.png",
-      label: "添加",
-      url: "/pages/statistic/index"
+      label: "记一笔",
+      url: "/pages/add/index"
     },
     {
       key: "statistic",
@@ -60,16 +60,15 @@ Component({
       this.setData({
         active:index
       })
-      // if (index == 2) {
-      //   wx.navigateTo({
-      //     url: this.data.list[index].url,
-      //   })
-      // } else {
-      //   wx.switchTab({
-      //     url: this.data.list[index].url
-      //   });
-      //   console.log('ddddddddddd',this.data.active)
-      // }
+      if (index == 2) {
+        wx.navigateTo({
+          url: this.data.list[index].url,
+        })
+      } else {
+        wx.switchTab({
+          url: this.data.list[index].url
+        });
+      }
     },
   }
 })

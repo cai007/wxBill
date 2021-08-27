@@ -24,6 +24,7 @@
 .selfTabBar .selfTabBarItem .tabTitle {
   font-size: 11px;
   margin-top: 4rpx;
+  color: #000;
 }
 
 .selfTabBar .activeBar {
@@ -31,13 +32,17 @@
 }
 
 .selfTabBar .cameraBarItem {
-  background: #bea070;
-  border-radius: 4px;
-  height: 36px;
-  width: 80%;
+  /* background: #bea070;
+  border-radius: 4px; */
+  height: 60rpx !important;
+  width: 60rpx !important;
   color: #fff;
   font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.tabbar-img{
+  height: 40rpx;
+  width: 40rpx;
 }

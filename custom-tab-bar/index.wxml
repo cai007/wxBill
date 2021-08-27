@@ -8,7 +8,8 @@
         <text class="tabTitle">{{item['label']}}</text>
       </view>
       <view wx:else class="cameraBarItem" data-active="{{index}}" bindtap="setKey">
-        <van-icon size="40rpx" name="{{active == index ? item['iconActive'] : item['icon']}}" />
+        <van-icon size="60rpx" name="{{active == index ? item['iconActive'] : item['icon']}}" />
+        <text class="tabTitle">{{item['label']}}</text>
       </view>
     </block>
   </view>

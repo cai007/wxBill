@@ -1,0 +1,16 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="支出"></van-tab>
+  <van-tab title="收入"></van-tab>
+  <van-tab title="转账"></van-tab>
+</van-tabs>
+<view class="">
+  <van-field
+    placeholder="请输入金额"
+    value="0.00"
+    label="用户名"
+    placeholder-style="text-align:center;"
+    input-class="money-input"
+    left-icon="contact"
+    right-icon="close"
+  />
+</view>

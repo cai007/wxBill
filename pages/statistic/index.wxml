@@ -1,2 +1,9 @@
-<!--pages/statistic/index.wxml-->
-<text>pages/statistic/index.wxml</text>
+<view class="container">
+  <ec-canvas  id="mychart-dom-bar" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ecbar }}"></ec-canvas>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-bar1" canvas-id="mychart-bar1" ec="{{ ecbar1 }}"></ec-canvas>
+</view>

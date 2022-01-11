@@ -1,3 +1,39 @@
 .money-input{
   text-align: right !important;
 }
+.add-input{
+  padding: 20rpx;
+}
+.type-title{
+  padding-left: 20rpx;
+}
+.add-type{
+  display: flex;
+  flex-wrap:wrap;
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid rgb(221, 215, 215);
+}
+.add-time .van-cell__value{
+  flex-grow: 2;
+}
+.add-btn-group{
+  position: absolute;
+  bottom: 80rpx;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.add-btn{
+  width: 200rpx;
+  background-color: red;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+}
+.add-btn-group .cancel{
+  background-color: #999;
+}

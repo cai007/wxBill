@@ -3,14 +3,80 @@
   <van-tab title="收入"></van-tab>
   <van-tab title="转账"></van-tab>
 </van-tabs>
-<view class="">
+<view class="add-input">
   <van-field
     placeholder="请输入金额"
     value="0.00"
     label="用户名"
     placeholder-style="text-align:center;"
     input-class="money-input"
-    left-icon="contact"
-    right-icon="close"
-  />
+    clearable
+    use-button-slot
+    left-icon="/imgs/system/tabbar_bbs_n.png"
+  >
+  <van-button slot="button" bindtap="scanBill" size="small" icon="/imgs/system/icon_input_trade.png">
+    </van-button>
+  </van-field>
 </view>
+<text class="type-title">常用类别</text>
+<view class="add-type">
+  <block wx:for="{{typeList}}" wx:key="index">
+    <type-item typeData="{{item}}"></type-item> 
+  </block>
+</view>
+<van-cell
+  is-link
+  arrow-direction="down"
+  value="{{user}}" 
+  title="账户"
+  bindclick="showUsers"
+/>
+<van-cell
+  is-link
+  arrow-direction="down"
+  value="{{date}}" 
+  title="时间"
+  class="add-time"
+  bindclick="showDate"
+/>
+<van-cell
+  is-link
+  arrow-direction="down"
+  value="{{location}}" 
+  title="位置"
+  bindclick="showPlace"
+/>
+<van-field
+  value="{{ value }}"
+  placeholder="备注"
+  border="{{ false }}"
+/>
+
+<view class="add-btn-group">
+  <view class="add-btn cancel">取消</view>
+  <view class="add-btn">保存</view>
+</view>
+
+
+
+<van-picker wx:if="{{showUsers}}" columns="{{ users }}" 
+show-toolbar bind:change="onChange"   bind:cancel="onCancel"
+  bind:confirm="onConfirm"/>
+<van-datetime-picker
+  wx:if="{{showDate}}"
+  bindconfirm="onDateConfirm"
+  bindcancel="onDateCancel"
+  type="date"
+  value="{{ currentDate }}"
+  bind:input="onInput"
+  min-date="{{ minDate }}"
+  formatter="{{ formatter }}"
+/>
+<van-datetime-picker
+  wx:if="{{showTime}}"
+  type="time"
+  value="{{ currentTime }}"
+  bind:input="onInput"
+  bindconfirm="onTimeConfirm"
+  bindcancel="onTimeCancel"
+/>

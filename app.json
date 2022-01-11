@@ -40,6 +40,7 @@
     "tabbar": "/custom-tab-bar",
     "ec-canvas": "/ec-canvas/ec-canvas",
     "tree-item": "components/treeItem/index",
+    "type-item":"components/typeItem/index",
     "van-button": "@vant/weapp/button/index",
     "van-cell": "@vant/weapp/cell/index",
     "van-tabbar": "@vant/weapp/tabbar/index",
@@ -47,6 +48,10 @@
     "van-image": "@vant/weapp/image/index",
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
-    "van-field": "@vant/weapp/field/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index"
   }
 }

@@ -1,0 +1,1 @@
+<view data-id="{{typeData.id}}" class="type-btn" bindtap="typeSelect">{{typeData.name}}</view>

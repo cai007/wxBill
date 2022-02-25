@@ -1,5 +1,5 @@
 <wxs src="../../utils/filter.wxs" module="tools" />
-<block wx:for="{{treeList}}" wx:key="bill_id">
+<block wx:for="{{data}}" wx:key="bill_id">
   <view class="tree-item">
       <view class="item-title">
         <text class="title-date">{{tools.substring(item.time,6,8)}}日</text>

@@ -1,4 +1,5 @@
 .tree-item{
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,7 +11,7 @@
   align-items: center;
   width: 100%;
   opacity: 0.6;
-  font-size: 14px;
+  font-size: 28rpx;
 }
 .title-point{
   width: 6px;
@@ -39,7 +40,8 @@
 }
 .hr{
   position: absolute;
-  height: 100%;
+  top: -30rpx;
+  bottom: 0;
   border: 1rpx solid rgb(230, 221, 221);
   z-index: -1;
 }
@@ -52,5 +54,6 @@
   height: 80rpx;
 }
 .info-caption{
+  font-size: 24rpx;
   opacity: 0.6;
 }
